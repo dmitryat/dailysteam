@@ -4,7 +4,7 @@ Overview
 --------
 Simple pet project for show grouped Steam stats day by day.
 
-Repository contains only self-created or modified files. 
+Created fall 2020. Repository contains only self-created or modified files. 
 
 
 Installation
