@@ -18,8 +18,8 @@ use yii\base\Component;
  */
 class SteamApi extends Component
 {
-    public $steamApiKey    = 'E74370B607A7E83391375E4C9D935A3D';
-    public $defaultSteamId = '76561198034714611';
+    public $steamApiKey    = '';
+    public $defaultSteamId = '';
 
     public function getDefaultSteamId()
     {
@@ -45,7 +45,6 @@ class SteamApi extends Component
 
     protected function requestRecentlyPlayedGames($steamId = null)
     {
-        // http://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?key=E74370B607A7E83391375E4C9D935A3D&steamid=76561198034714611&format=json
         $source = $this->getSourceUrl($steamId);
 
         $response = file_get_contents($source);
